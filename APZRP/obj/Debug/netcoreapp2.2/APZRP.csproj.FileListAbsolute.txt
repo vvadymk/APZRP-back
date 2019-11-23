@@ -1,0 +1,16 @@
+C:\Users\Vadym\source\repos\APZRP\APZRP\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Vadym\source\repos\APZRP\APZRP\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Vadym\source\repos\APZRP\APZRP\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Vadym\source\repos\APZRP\APZRP\bin\Debug\netcoreapp2.2\APZRP.deps.json
+C:\Users\Vadym\source\repos\APZRP\APZRP\bin\Debug\netcoreapp2.2\APZRP.runtimeconfig.json
+C:\Users\Vadym\source\repos\APZRP\APZRP\bin\Debug\netcoreapp2.2\APZRP.runtimeconfig.dev.json
+C:\Users\Vadym\source\repos\APZRP\APZRP\bin\Debug\netcoreapp2.2\APZRP.dll
+C:\Users\Vadym\source\repos\APZRP\APZRP\bin\Debug\netcoreapp2.2\APZRP.pdb
+C:\Users\Vadym\source\repos\APZRP\APZRP\obj\Debug\netcoreapp2.2\APZRP.csprojAssemblyReference.cache
+C:\Users\Vadym\source\repos\APZRP\APZRP\obj\Debug\netcoreapp2.2\APZRP.RazorAssemblyInfo.cache
+C:\Users\Vadym\source\repos\APZRP\APZRP\obj\Debug\netcoreapp2.2\APZRP.RazorAssemblyInfo.cs
+C:\Users\Vadym\source\repos\APZRP\APZRP\obj\Debug\netcoreapp2.2\APZRP.AssemblyInfoInputs.cache
+C:\Users\Vadym\source\repos\APZRP\APZRP\obj\Debug\netcoreapp2.2\APZRP.AssemblyInfo.cs
+C:\Users\Vadym\source\repos\APZRP\APZRP\obj\Debug\netcoreapp2.2\APZRP.RazorTargetAssemblyInfo.cache
+C:\Users\Vadym\source\repos\APZRP\APZRP\obj\Debug\netcoreapp2.2\APZRP.dll
+C:\Users\Vadym\source\repos\APZRP\APZRP\obj\Debug\netcoreapp2.2\APZRP.pdb

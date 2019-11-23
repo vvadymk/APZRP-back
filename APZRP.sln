@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APZRP", "APZRP\APZRP.csproj", "{16C622EB-C3EB-406A-86A2-2A7B45531DFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16C622EB-C3EB-406A-86A2-2A7B45531DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C622EB-C3EB-406A-86A2-2A7B45531DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C622EB-C3EB-406A-86A2-2A7B45531DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C622EB-C3EB-406A-86A2-2A7B45531DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35B4D134-9C2B-4983-9748-04F39EFAA687}
+	EndGlobalSection
+EndGlobal
