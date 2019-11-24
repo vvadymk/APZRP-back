@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using APZRP.Models;
 
 namespace APZRP.Models
 {
@@ -15,5 +12,7 @@ namespace APZRP.Models
         }
 
         public DbSet<AppUser> ApplicationUsers { get; set; }
+
+        public DbSet<APZRP.Models.Query> Query { get; set; }
     }
 }
