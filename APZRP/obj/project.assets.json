@@ -13019,7 +13019,8 @@
       "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.4",
+      "System.IO >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -13090,6 +13091,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.2.4, )"
+          },
+          "System.IO": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           }
         },
         "imports": [
