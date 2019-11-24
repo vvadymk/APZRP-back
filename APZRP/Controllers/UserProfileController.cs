@@ -42,29 +42,29 @@ namespace APZRP.Controllers
         public async Task<Query> GetHistory()
         {
             string userId = User.Claims.First(c => c.Type == "UserID").Value;
-
-            Query a = await _context.Query.SingleOrDefaultAsync(m => m.Id == userId);
+            Query a = await _context.Query.SingleOrDefaultAsync(m => m.UserId == userId);
             return a;
         }
 
         [HttpPost]
         [Route("addQuery")]
         [Authorize]
-        public object PostQuery(QueryModel model)
+        public async Task<object> PostQueryAsync(QueryModel model)
         {
             string userId = User.Claims.First(c => c.Type == "UserID").Value;
-
+            var user = await _userManager.FindByIdAsync(userId);
             var query = new Query()
             {
                 Arab = model.Arab,
                 Roman = "s",
                 Date = DateTime.Now,
-                UserId = userId
+                UserId = user.Id
             };
 
             try
             {
                 _context.Query.Add(query);
+                _context.SaveChanges();
                 return new OkObjectResult(new { Ok = true });
             }
             catch (Exception ex)
@@ -72,6 +72,7 @@ namespace APZRP.Controllers
 
                 throw ex;
             }
+
         }
     }
 }

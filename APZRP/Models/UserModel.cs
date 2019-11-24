@@ -1,6 +1,4 @@
-﻿
-
-namespace APZRP.Models
+﻿namespace APZRP.Models
 {
     public class UserModel
     {

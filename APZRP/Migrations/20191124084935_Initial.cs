@@ -50,6 +50,21 @@ namespace APZRP.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Query",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    Arab = table.Column<int>(nullable: false),
+                    Roman = table.Column<string>(nullable: false),
+                    Date = table.Column<DateTime>(nullable: false),
+                    UserId = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Query", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -150,27 +165,6 @@ namespace APZRP.Migrations
                     table.ForeignKey(
                         name: "FK_AspNetUserTokens_AspNetUsers_UserId",
                         column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Query",
-                columns: table => new
-                {
-                    Id = table.Column<string>(nullable: false),
-                    Arab = table.Column<int>(nullable: false),
-                    Roman = table.Column<string>(nullable: false),
-                    Date = table.Column<DateTime>(nullable: false),
-                    UserId = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Query", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Query_AspNetUsers_Id",
-                        column: x => x.Id,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
