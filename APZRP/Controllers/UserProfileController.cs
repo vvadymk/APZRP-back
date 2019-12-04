@@ -54,27 +54,42 @@ namespace APZRP.Controllers
         public async Task<Object> PostQuery(QueryModel model)
         {
             string userId = User.Claims.First(c => c.Type == "UserID").Value;
+            
 
             var query = new Query()
             {
                 Arab = model.Arab,
                 Roman = ToRoman(model.Arab),
                 Date = DateTime.Now,
-                UserId = userId
-
-
+                UserId = userId,
+                User = await _userManager.FindByIdAsync(userId)
             };
 
             try
             {
                 _context.Query.Add(query);
-                return new OkObjectResult(new { Ok = true });
+                return query;
             }
             catch (Exception ex)
             {
 
                 throw ex;
             }
+        }
+
+        [HttpGet]
+        [Route("getQuery")]
+        [Authorize]
+        public async Task<Query> GetQueryHistory()
+        {
+            string userId = User.Claims.First(c => c.Type == "UserID").Value;
+            var query = new Query
+            {
+                Date = DateTime.Now,
+                UserId = userId
+            };
+            query = await _context.Query.SingleOrDefaultAsync(m => m.Id == userId);
+            return query;                         
         }
 
         public static string ToRoman(int number)
