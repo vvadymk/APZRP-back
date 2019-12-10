@@ -8,7 +8,7 @@ namespace APZRP.Models
     {
         public AppContext(DbContextOptions options) : base(options)
         {
-
+            
         }
 
         public DbSet<AppUser> ApplicationUsers { get; set; }
